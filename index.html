@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Self Service Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="wrapper">
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <div class="sidebar-logo">
+            <i class="fas fa-th-large"></i>
+        </div>
+        <div class="sidebar-nav">
+            <div class="nav-item active"><i class="fas fa-home"></i></div>
+            <div class="nav-item"><i class="fas fa-user-friends"></i></div>
+            <div class="nav-item"><i class="fas fa-chart-line"></i></div>
+            <div class="nav-item"><i class="fas fa-trophy"></i></div>
+            <div class="nav-item"><i class="fas fa-file-alt"></i></div>
+            <div class="nav-item"><i class="fas fa-clipboard-list"></i></div>
+        </div>
+        <div class="sidebar-bottom">
+            <div class="nav-item"><i class="fas fa-cog"></i></div>
+            <div class="nav-item"><i class="fas fa-power-off"></i></div>
+        </div>
+    </nav>
+    <div class="sidebar-overlay"></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Top Header -->
+        <header class="top-header">
+            <div class="header-left">
+                <button class="mobile-toggle me-3 d-lg-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="header-logo">
+                    <!-- Placeholder logo based on generated asset -->
+                    <img src="images/logo.png" alt="Cynosure Logo">
+                </div>
+                <div class="header-title">Employee Self Service</div>
+            </div>
+            <div class="header-right">
+                <span class="user-greeting">Welcome Employee <i class="fas fa-link ms-2"></i></span>
+                <img src="images/avatar2.png" alt="Profile" class="profile-img ms-2">
+            </div>
+        </header>
+
+        <!-- Dashboard Breadcrumb -->
+        <div class="dashboard-title-row">
+            <h4 class="page-title">Dashboard</h4>
+            <div class="year-selector">
+                <select class="form-select-sm">
+                    <option>2025-2026</option>
+                    <option>2024-2025</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="dashboard-body">
+            <!-- Greeting & Create -->
+            <div class="greeting-card">
+                <div class="greeting-text">
+                    <h1>Hello Srashti,</h1>
+                </div>
+                <button class="btn-create">
+                    Create <i class="fas fa-plus"></i>
+                </button>
+            </div>
+
+            <!-- Summary Cards Row -->
+            <div class="row g-4 mb-4">
+                <div class="col-md-3">
+                    <div class="summary-card card-meeting">
+                        <div class="summary-icon"><i class="fas fa-video"></i></div>
+                        <h6>Todays Meeting</h6>
+                        <div class="number">12</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="summary-card card-task">
+                        <div class="summary-icon"><i class="fas fa-tasks"></i></div>
+                        <h6>Todays Task</h6>
+                        <div class="number">12</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="summary-card card-pending">
+                        <div class="summary-icon"><i class="fas fa-clock"></i></div>
+                        <h6>Total Pending task</h6>
+                        <div class="number">12</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="summary-card card-meeting-red">
+                        <div class="summary-icon"><i class="fas fa-calendar-check"></i></div>
+                        <h6>Todays Meeting</h6>
+                        <div class="number">12</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content Grid -->
+            <div class="row">
+                <!-- Left & Middle Content (8 cols) -->
+                <div class="col-lg-8">
+                    <div class="row">
+                        <!-- Left Column -->
+                        <div class="col-md-6">
+                            <!-- To Do List -->
+                            <div class="content-card">
+                                <div class="card-header-flex">
+                                    <h5 class="todo-header" style="color: #2b6cb0;">To Do List</h5>
+                                    <div class="header-actions">
+                                        <select class="form-select form-select-sm" style="width: auto;">
+                                            <option>Today</option>
+                                        </select>
+                                        <button class="btn-icon-plus"><i class="fas fa-plus"></i></button>
+                                    </div>
+                                </div>
+                                <div class="todo-list">
+                                    <div class="list-item">
+                                        <div class="item-main">
+                                            <i class="fas fa-star star-icon active"></i>
+                                            <div class="item-info">
+                                                <h6>Design Task Management ...</h6>
+                                                <p>Task Management | By : Deepa Ma'am</p>
+                                            </div>
+                                        </div>
+                                        <span class="tag tag-daily">Daily</span>
+                                    </div>
+                                    <div class="list-item">
+                                        <div class="item-main">
+                                            <i class="far fa-star star-icon"></i>
+                                            <div class="item-info">
+                                                <h6>Design Wire frame</h6>
+                                                <p>Task Management | By : Gourav sir</p>
+                                            </div>
+                                        </div>
+                                        <span class="tag tag-weekly">Weekly</span>
+                                    </div>
+                                    <div class="list-item">
+                                        <div class="item-main">
+                                            <i class="far fa-star star-icon"></i>
+                                            <div class="item-info">
+                                                <h6>Scope Document</h6>
+                                                <p>Task Management | By : Gourav sir</p>
+                                            </div>
+                                        </div>
+                                        <span class="tag tag-monthly">Monthly</span>
+                                    </div>
+                                    <div class="list-item">
+                                        <div class="item-main">
+                                            <i class="far fa-star star-icon"></i>
+                                            <div class="item-info">
+                                                <h6>Document Creation</h6>
+                                                <p>Task Management | By : Gourav sir</p>
+                                            </div>
+                                        </div>
+                                        <span class="tag tag-yearly">Yearly</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Ongoing Projects -->
+                            <div class="content-card">
+                                <div class="card-header-flex border-bottom-0">
+                                    <h5 style="color: #2b6cb0;"><i class="fas fa-project-diagram me-2"></i> Ongoing Projects</h5>
+                                </div>
+                                <div class="project-items">
+                                    <!-- Project 1 -->
+                                    <div class="project-item mb-4">
+                                        <h6>Update Employee Contact ..</h6>
+                                        <p class="text-muted small">Ensure all employee contact details are up-to-date in the ESS portal...</p>
+                                        <div class="d-flex align-items-center gap-2 mb-2">
+                                            <i class="far fa-clock text-muted"></i>
+                                            <span class="small font-weight-bold">09:30 PM - 10:00 AM</span>
+                                        </div>
+                                        <div class="progress-container">
+                                            <div class="progress-info">
+                                                <span>Progress</span>
+                                                <span style="color: #4299e1;">62%</span>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-info" role="progressbar" style="width: 62%;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center mt-3">
+                                            <div class="team-avatars">
+                                                <img src="images/avatar1.png" class="avatar-stack">
+                                                <img src="images/avatar2.png" class="avatar-stack">
+                                                <img src="images/avatar1.png" class="avatar-stack">
+                                            </div>
+                                            <div class="small text-muted"><i class="fas fa-tasks me-1"></i> 12 tasks | <i class="fas fa-users me-1"></i> 86 Activities</div>
+                                        </div>
+                                    </div>
+                                    <!-- Project 2 -->
+                                    <div class="project-item">
+                                        <h6>Approve Leave Requests</h6>
+                                        <p class="text-muted small">Review and approve pending leave applications via the ESS portal...</p>
+                                        <div class="d-flex align-items-center gap-2 mb-2">
+                                            <i class="far fa-clock text-muted"></i>
+                                            <span class="small font-weight-bold">09:30 PM - 10:00 AM</span>
+                                        </div>
+                                        <div class="progress-container">
+                                            <div class="progress-info">
+                                                <span>Complete</span>
+                                                <span style="color: #48bb78;">100%</span>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center mt-3">
+                                            <div class="team-avatars">
+                                                <img src="images/avatar1.png" class="avatar-stack">
+                                                <img src="images/avatar2.png" class="avatar-stack">
+                                            </div>
+                                            <div class="small text-muted"><i class="fas fa-tasks me-1"></i> 12 tasks | <i class="fas fa-users me-1"></i> 86 Activities</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Middle Column -->
+                        <div class="col-md-6">
+                            <!-- Meeting -->
+                            <div class="content-card">
+                                <div class="card-header-flex">
+                                    <h5 style="color: #2b6cb0;">Meeting</h5>
+                                    <div class="header-actions">
+                                        <select class="form-select form-select-sm" style="width: auto;">
+                                            <option>Today</option>
+                                        </select>
+                                        <button class="btn-icon-plus"><i class="fas fa-plus"></i></button>
+                                    </div>
+                                </div>
+                                <div class="meeting-list">
+                                    <div class="list-item">
+                                        <div class="item-info">
+                                            <h6>Team Stand-up Meeting</h6>
+                                            <p><i class="far fa-clock me-1"></i> 09:15 AM - 09:45 AM</p>
+                                        </div>
+                                        <span class="small"><i class="fas fa-headset me-1"></i> 70 min</span>
+                                    </div>
+                                    <div class="list-item">
+                                        <div class="item-info">
+                                            <h6>Discussion with Client</h6>
+                                            <p><i class="far fa-clock me-1"></i> 10:30 PM - 11:15 AM</p>
+                                        </div>
+                                        <span class="small"><i class="fas fa-headset me-1"></i> 70 min</span>
+                                    </div>
+                                    <div class="list-item">
+                                        <div class="item-info">
+                                            <h6>Interview Front end Developer</h6>
+                                            <p><i class="far fa-clock me-1"></i> 11:30 AM - 01:00 PM</p>
+                                        </div>
+                                        <span class="small"><i class="fas fa-headset me-1"></i> 70 min</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Tasks in Review -->
+                            <div class="content-card">
+                                <div class="card-header-flex">
+                                    <h5 style="color: #2b6cb0;">Tasks in Review</h5>
+                                </div>
+                                <div class="review-list">
+                                    <div class="list-item">
+                                        <div class="item-info">
+                                            <h6>Design Task Management ...</h6>
+                                            <p>Submitted: Yesterday | To : Deepa Ma'am</p>
+                                        </div>
+                                        <span class="badge bg-success-subtle text-success border border-success-subtle">Submitted</span>
+                                    </div>
+                                    <div class="list-item">
+                                        <div class="item-info">
+                                            <h6>Design Wire frame</h6>
+                                            <p>Submitted: Yesterday | To : Gourav sir</p>
+                                        </div>
+                                        <span class="badge bg-success-subtle text-success border border-success-subtle">Submitted</span>
+                                    </div>
+                                    <div class="list-item">
+                                        <div class="item-info">
+                                            <h6>Scope Document</h6>
+                                            <p>Submitted: Yesterday | To : Gourav sir</p>
+                                        </div>
+                                        <span class="badge bg-success-subtle text-success border border-success-subtle">Submitted</span>
+                                    </div>
+                                    <div class="list-item">
+                                        <div class="item-info">
+                                            <h6>User Experience Research</h6>
+                                            <p>Submitted: Today | To : Deepa Ma'am</p>
+                                        </div>
+                                        <span class="badge bg-warning-subtle text-warning border border-warning-subtle">In Review</span>
+                                    </div>
+                                    <div class="list-item">
+                                        <div class="item-info">
+                                            <h6>Prototype Development</h6>
+                                            <p>Submitted: Today | To : Aditya sir</p>
+                                        </div>
+                                        <span class="badge bg-warning-subtle text-warning border border-warning-subtle">In Review</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Sidebar (4 cols) -->
+                <div class="col-lg-4">
+                    <!-- Upcoming Events -->
+                    <div class="content-card">
+                        <div class="card-header-flex">
+                            <h5 style="color: #2b6cb0;">Upcoming Events</h5>
+                            <div class="header-actions">
+                                <i class="fas fa-chevron-left text-muted small me-2"></i>
+                                <i class="fas fa-chevron-right text-primary small"></i>
+                            </div>
+                        </div>
+                        <div class="event-card d-flex align-items-center gap-3">
+                            <div class="event-date text-center p-2 rounded" style="background: #f8f9fa; min-width: 60px;">
+                                <div class="h4 m-0 font-weight-bold">03</div>
+                                <div class="small">July</div>
+                            </div>
+                            <div class="event-details">
+                                <h6 class="mb-1">Project Kickoff</h6>
+                                <p class="small text-muted mb-0">The event details will come here in this line...</p>
+                                <div class="small mt-1"><i class="far fa-clock me-1"></i> 12:00 PM</div>
+                            </div>
+                            <div class="event-next-date text-muted small ms-auto">
+                                <div class="h6 m-0">05</div>
+                                <div>July</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Feed -->
+                    <div class="content-card feed-card">
+                        <div class="card-header-flex">
+                            <h5 style="color: #2b6cb0;">Feed <span class="badge bg-danger rounded-circle ms-2" style="font-size: 10px;">2</span></h5>
+                        </div>
+                        <div class="tab-nav">
+                            <button class="tab-link active">View All</button>
+                            <button class="tab-link">Unread (2)</button>
+                            <button class="tab-link ms-auto text-dark small" style="border: none;">Mark all as read</button>
+                        </div>
+                        <div class="feed-items">
+                            <div class="feed-date">Thursday, 26 Jun</div>
+                            <div class="feed-item">
+                                <div class="d-flex justify-content-between">
+                                    <h6>New Task Assigned</h6>
+                                    <span class="badge bg-primary-subtle text-primary x-small">Unread</span>
+                                </div>
+                                <p class="small text-muted">You have been assigned a new task by Ramesh pandey (Team Lead) in the...</p>
+                                <div class="small text-muted">By : Ramesh Pandey | 12:32</div>
+                            </div>
+                            <div class="feed-item">
+                                <div class="d-flex justify-content-between">
+                                    <h6>New Task Assigned</h6>
+                                    <span class="badge bg-primary-subtle text-primary x-small">Unread</span>
+                                </div>
+                                <p class="small text-muted">You have been assigned a new task by Ramesh pandey (Team Lead) in the...</p>
+                                <div class="small text-muted">By : Ramesh Pandey | 12:32</div>
+                            </div>
+                            <div class="feed-item">
+                                <h6>Travel management reached a Milestone</h6>
+                                <img src="images/milestone.png" alt="celebration" style="width: 120px; border-radius: 8px;" class="my-3 d-block">
+                                <div class="small text-muted">System generated | 12:32</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
