@@ -2,7 +2,7 @@
 
 ## 🔗 Live Demo
 
-👉 [Live Link](PASTE_LINK_HERE)
+👉 [Live Link](https://employee-self-service-dashboard.netlify.app)
 
 ## 💻 Repository
 
@@ -44,4 +44,4 @@ index.html
 ## 👩💻 Author
 
 Srashti Dawande
-LinkedIn: PASTE_LINK
+LinkedIn: [srashti-dawande-01884b202](https://www.linkedin.com/in/srashti-dawande-01884b202)
