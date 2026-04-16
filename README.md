@@ -4,6 +4,15 @@
 
 👉 [Live Link](https://employee-self-service-dashboard.netlify.app)
 
+---
+
+## 📸 Screenshots
+
+### Desktop View
+![Tableau de bord Desktop](images/dashboard_desktop.png)
+
+---
+
 ## 💻 Repository
 
 👉 [GitHub Link](https://github.com/srashtidawande/Employee-Self-Service-Dashboard)
